@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    font-family: "Manrope", sans-serif;
+    box-sizing: border-box;
+}
+
+:root{
+    --lightgreen: #53ffab;
+    --lightgrey: #d0e4eb;
+    --darkwhite: #313a49;
+    --darkblue: #202632;
+}
+
+body{
+    background-color: var(--darkblue);
+    position: relative;
+}
+
+.containerCard{
+    margin-top: 40px;
+}
+
+.card{
+    width: 90%;
+    margin: auto;
+    background-color: var(--darkwhite);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px 20px;
+    gap: 30px;
+}
+
+/*idadvice*/
+p{
+    color: var(--lightgreen);
+    font-size: 15px;
+}
+
+/*advice*/
+h4{ 
+    color: var(--lightgrey);
+    font-size: 20px;
+}
+
+/*pattern*/
+img{ 
+    width: 300px;
+}
+
+button{
+    background-color:  var(--lightgreen);
+    border: none;
+    display: flex;
+    margin: 0px;
+    padding: 12px 10px;
+    border-radius: 50%;
+    margin-bottom: -50px;
+}
+
+button:hover{
+    box-shadow: 1px 1px 25px var(--lightgreen);
+}
+
+/*immagine bottone*/
+button img{
+    width: 35px;
+}
+
+@media screen and (min-width: 768px) {
+
+    .containerCard{
+        margin-top: 200px;
+    }
+
+    .card{
+        width: 500px;
+        margin: auto;
+        background-color: var(--darkwhite);
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px 20px;
+        gap: 30px;
+    }
+
+    button {
+        cursor: pointer;
+    }
+
+    button img{
+        width: 30px;
+    }
+}
